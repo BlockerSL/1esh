@@ -11,7 +11,8 @@
       @click="syntaxGuide = !syntaxGuide"
     >
       {{ syntaxGuide ? "Hide" : "Show" }} ڕێنوێنی سینتاکس
-    <SyntaxGuide :initialVisibility="syntaxGuide" @visibility="syntaxGuide = $event" />
+   </el-button>
+ <SyntaxGuide :initialVisibility="syntaxGuide" @visibility="syntaxGuide = $event" />
   </div>
 </template>
 
