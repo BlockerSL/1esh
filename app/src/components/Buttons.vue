@@ -4,11 +4,12 @@
       type="primary"
       icon="el-icon-refresh"
       @click="random"
-    > چارەسەرکردنی هاوکێشەی هەڕەمەکی </el-button>
-   </div>
-</template>
+    >Solve random equation</el-button>
 
+  </div>
+</template>
 <script>
+
 import { random as generateEquation } from '../library/chem-balancer';
 
 export default {
@@ -28,3 +29,4 @@ export default {
     },
   },
 };
+</script>
