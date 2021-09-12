@@ -5,19 +5,10 @@
       icon="el-icon-refresh"
       @click="random"
     > چارەسەرکردنی هاوکێشەی هەڕەمەکی </el-button>
-    <el-button
-      type="primary"
-      icon="el-icon-view"
-      @click="syntaxGuide = !syntaxGuide"
-    >
-      {{ syntaxGuide ? "Hide" : "Show" }} ڕێنوێنی سینتاکس
-   </el-button>
- <SyntaxGuide :initialVisibility="syntaxGuide" @visibility="syntaxGuide = $event" />
-  </div>
+   </div>
 </template>
 
 <script>
-import SyntaxGuide from './SyntaxGuide.vue';
 import { random as generateEquation } from '../library/chem-balancer';
 
 export default {
